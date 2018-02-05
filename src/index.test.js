@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from 'redux'
-import mittMiddleware from './index'
+import { mittMiddleware } from './index'
 
 const reducer = () => {}
 const store = createStore(reducer, mittMiddleware())

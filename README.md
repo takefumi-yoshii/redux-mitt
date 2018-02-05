@@ -14,7 +14,7 @@ $ npm install --save redux-mitt
 
 ```javascript
 import { createStore, applyMiddleware } from 'redux'
-import mittMiddleware from 'redux-mitt'
+import { mittMiddleware } from 'redux-mitt'
 
 const reducer = () => {}
 const store = createStore(reducer, mittMiddleware())

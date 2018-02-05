@@ -1,4 +1,4 @@
-import mitt from 'mitt'
+const mitt = require('mitt')
 
 const mittMiddleware = store => next => action => {
   const m = mitt()
@@ -18,4 +18,6 @@ const mittMiddleware = store => next => action => {
   }
 }
 
-export default mittMiddleware
+module.exports = {
+  mittMiddleware 
+}
