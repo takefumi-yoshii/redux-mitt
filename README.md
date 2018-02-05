@@ -1,6 +1,6 @@
 # redux-mitt
 
-what is this?**
+## what is this?
 
 The redux standard API does not have an easy way to subscribe Actions and unsubscribe them.added this as a lightweight function.
 
