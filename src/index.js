@@ -1,4 +1,4 @@
-import mitt from 'mitt'
+const mitt = require('mitt')
 
 const mittMiddleware = store => next => action => {
   const m = mitt()
