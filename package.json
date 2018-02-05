@@ -1,6 +1,6 @@
 {
   "name": "redux-mitt",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "redux-mitt",
   "main": "src/index.js",
   "scripts": {
@@ -17,12 +17,21 @@
     "url": "https://github.com/takefumi-yoshii/redux-mitt/issues"
   },
   "homepage": "https://github.com/takefumi-yoshii/redux-mitt#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
   "dependencies": {
     "mitt": "1.1.3"
   },
   "devDependencies": {
+    "babel-core": "6.26.0",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.6.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
     "jest": "22.1.4",
     "redux": "3.7.2"
   }
