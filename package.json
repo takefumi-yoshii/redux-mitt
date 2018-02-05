@@ -1,0 +1,29 @@
+{
+  "name": "redux-mitt",
+  "version": "1.0.0",
+  "description": "redux-mitt",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "jest ./src --watch",
+    "test": "jest ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takefumi-yoshii/redux-mitt.git"
+  },
+  "author": "takefumi-yoshii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takefumi-yoshii/redux-mitt/issues"
+  },
+  "homepage": "https://github.com/takefumi-yoshii/redux-mitt#readme",
+  "dependencies": {
+    "mitt": "1.1.3"
+  },
+  "devDependencies": {
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "jest": "22.1.4",
+    "redux": "3.7.2"
+  }
+}
