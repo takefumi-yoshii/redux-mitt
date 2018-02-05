@@ -5,9 +5,11 @@
       {
         "targets": {
           "browsers": [
-            "last 2 versions"
+            "last 2 versions",
+            "ie >= 11"
           ]
-        }
+        },
+        "useBuiltIns": true
       }
     ]
   ]
