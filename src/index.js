@@ -11,11 +11,11 @@ const mittMiddleware = store => next => action => {
     m.on(type, handler)
     return () => m.off(type, handler)
   }
-  return {
+  return Object.assign({},
     ...store,
     dispatch,
     subscribeAction
-  }
+  )
 }
 
 export { mittMiddleware  }
