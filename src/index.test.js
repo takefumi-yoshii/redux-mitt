@@ -5,12 +5,21 @@ const reducer = () => {}
 const store = createStore(reducer, mittMiddleware())
 
 describe('#subscribeAction', () => {
-  const type = 'TEST'
   const payload = { test: 'test' }
-  const creator = () => { return { type, payload }}
-  const unsubscribe = store.subscribeAction(type, action => {
-    test('#test', () => expect(action).toEqual(creator()))
+  store.subscribeAction('TEST', action => {
+    test('#subscribe specific action', () => expect(action).toEqual({ type: 'TEST', payload }))
   })
-  // unsubscribe() # unsubscribe action
-  store.dispatch(creator())
+  store.subscribeAction('*', (type, action) => {
+    test('#subscribe wildcard action', () => expect(action).toEqual({ type: 'TEST', payload }))
+  })
+  store.dispatch({ type: 'TEST', payload })
+
+  test('#throw error', () => {
+    const wrongArgument = () => store.subscribeAction(0, (type, action) => {})
+    expect(wrongArgument).toThrowError('First argument must be string of action.')
+  })
+  test('#throw error', () => {
+    const wrongArgument = () => store.subscribeAction('TEST', 'TEST')
+    expect(wrongArgument).toThrowError('Second argument must be function.')
+  })
 })

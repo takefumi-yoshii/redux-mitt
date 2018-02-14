@@ -8,6 +8,8 @@ const mittMiddleware = store => next => action => {
     return store.dispatch(action)
   }
   const subscribeAction = (type, handler) => {
+    if (typeof type !== 'string') throw new TypeError("First argument must be string of action.")
+    if (typeof handler !== 'function') throw new TypeError("Second argument must be function.")
     m.on(type, handler)
     return () => m.off(type, handler)
   }
