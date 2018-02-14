@@ -1,5 +1,8 @@
 # redux-mitt
 
+[![Latest Version](https://img.shields.io/badge/npm-v1.1.0-red.svg)](https://www.npmjs.com/package/redux-mitt)
+[![CircleCI](https://circleci.com/gh/takefumi-yoshii/redux-mitt/tree/master.svg?style=svg)](https://circleci.com/gh/takefumi-yoshii/redux-mitt/tree/master)
+
 ## what is this?
 
 The redux standard API does not have an easy way to subscribe Actions and unsubscribe them.added this as a lightweight function.
