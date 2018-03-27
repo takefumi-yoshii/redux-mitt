@@ -1,6 +1,6 @@
 # redux-mitt
 
-[![Latest Version](https://img.shields.io/badge/npm-v2.0.0-C12127.svg)](https://www.npmjs.com/package/redux-mitt)
+[![Latest Version](https://img.shields.io/badge/npm-v2.1.0-C12127.svg)](https://www.npmjs.com/package/redux-mitt)
 [![CircleCI](https://circleci.com/gh/takefumi-yoshii/redux-mitt/tree/master.svg?style=svg)](https://circleci.com/gh/takefumi-yoshii/redux-mitt/tree/master)
 
 ## what is this?
